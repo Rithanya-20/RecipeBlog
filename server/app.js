@@ -1,9 +1,12 @@
 const express = require("express")
 const mongoose = require('mongoose')
+require('dotenv').config()
 
-mongoose.connect('mongodb://127.0.0.1:27017/RecipeBook').then((res) => console.log('Database is connected')
+mongoose.connect(process.env.MONGO_URI).then((res) => console.log('Database is connected')
 ).catch((Err) => console.log(Err.message)
 )
+
+
 
 const cors = require('cors')
 const RegisterModel = require('./models/Register')
@@ -14,6 +17,8 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(router)
+
+const PORT = process.env.PORT || 3001
 
 const path = require('path');
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
@@ -56,7 +61,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // })
     
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
     console.log('server is Running');
     
 })
