@@ -9,7 +9,7 @@ function Create() {
 
  const navigate = useNavigate()
 
- const tags = ["Breakfast", "Lunch", "Dinner", "Gravy", "Bread", "Noodles", "Rice","Appetizer", "salad", "Pizza", "Pasta", "Smoothie", "Dessert", "Hot Drink", "Tiffin", "Others"]
+ const tags = ["Breakfast", "Lunch", "Dinner", "Gravy", "Bread", "Noodles", "Rice","Appetizer", "Salad", "Pizza", "Pasta", "Smoothie", "Dessert", "Hot Drink", "Tiffin", "Others"]
   
  const [title, setTitle] = useState()
 //  const [tag, setTag] = useState()

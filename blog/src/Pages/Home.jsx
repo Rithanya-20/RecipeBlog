@@ -21,7 +21,8 @@ function Home() {
 
     const handleClick = (e) => {
         e.preventDefault()
-        navigate('/create')
+        // navigate('/create')
+        localStorage.getItem('user') ? navigate('/create') : navigate('/login')
     }
   return (
    
@@ -32,7 +33,7 @@ function Home() {
         <div className="p-5 bg-[url('./../assets/Hero.png')] bg-cover bg-center">
              <div
     >
-      <div className='sm:text-center lg:text-left'>
+      <div className='text-center lg:text-left'>
                 <h1 className='font-bold text-[2rem] lg:text-[3rem]'>Your Daily Dish</h1>
                 <h1 className='font-bold text-[2rem] lg:text-[3rem] '>A <span className='text-[var(--sec-dark-brown)]'>Food</span> Journey</h1>
 
