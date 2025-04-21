@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Hero from './../assets/Hero.png'
+// import Hero from './../assets/Hero.png'
 import { useNavigate } from 'react-router-dom'
 import create from './../assets/foodSnap.png'
 import Category from '../Components/Category'
