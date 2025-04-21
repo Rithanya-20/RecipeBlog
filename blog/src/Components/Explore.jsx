@@ -12,7 +12,7 @@ function Explore() {
   
       
       const getRecipeData = async() => {
-          const res = await axios.get("http://localhost:3001/recipe", {
+          const res = await axios.get("https://inourkitchen.onrender.com/recipe", {
               headers:{
                   "Content-Type":"application/json"
               }

@@ -20,7 +20,7 @@ function Recipe() {
     const searchRecipes = async (searchTerm) => {
         console.log("SearchItem: "+ searchTerm);
         
-        const res = await fetch('http://localhost:3001/search', {
+        const res = await fetch('https://inourkitchen.onrender.com/search', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -46,7 +46,7 @@ function Recipe() {
     
     
     const getRecipeData = async() => {
-        const res = await axios.get("http://localhost:3001/recipe", {
+        const res = await axios.get("https://inourkitchen.onrender.com/recipe", {
             headers:{
                 "Content-Type":"application/json"
             }

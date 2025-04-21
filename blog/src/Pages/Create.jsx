@@ -115,7 +115,7 @@ const handleYoutube = (value) => {
     }
 
 
-    const res = await axios.post("http://localhost:3001/create", formData, config)
+    const res = await axios.post("https://inourkitchen.onrender.com/create", formData, config)
 
     console.log(res);
 
@@ -128,7 +128,7 @@ const handleYoutube = (value) => {
     
 
 
-    // axios.post('http://localhost:3001/create',{title, ingredients, method, file, checkedItems, youtube}, config)
+    // axios.post('https://inourkitchen.onrender.com/create',{title, ingredients, method, file, checkedItems, youtube}, config)
     //        .then(res => {console.log(res)
     //         alert("Recipe Created!")
     //        navigate('/recipe')}

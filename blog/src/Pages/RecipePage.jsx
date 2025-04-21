@@ -27,7 +27,7 @@ function RecipePage() {
      
 
       const getRecipeById = async() => {
-        const res = await axios.get(`http://localhost:3001/recipepage/${id}`,{
+        const res = await axios.get(`https://inourkitchen.onrender.com/recipepage/${id}`,{
           headers:{
               "Content-Type":"application/json"
           }
@@ -84,7 +84,7 @@ function RecipePage() {
    
       
       const getRecipeData = async() => {
-          const res = await axios.get("http://localhost:3001/recipe", {
+          const res = await axios.get("https://inourkitchen.onrender.com/recipe", {
               headers:{
                   "Content-Type":"application/json"
               }
@@ -191,7 +191,7 @@ tagItem.map((item) => (
     </div>
   </div>
 
-  <img src={`http://localhost:3001/uploads/${recipeItem.imgpath}` } className='w-[300px] lg:w-[20rem] h-[290px] lg:h-[20rem] mt-5 rounded-lg'/>
+  <img src={`https://inourkitchen.onrender.com/uploads/${recipeItem.imgpath}` } className='w-[300px] lg:w-[20rem] h-[290px] lg:h-[20rem] mt-5 rounded-lg'/>
 
   {/* <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
 

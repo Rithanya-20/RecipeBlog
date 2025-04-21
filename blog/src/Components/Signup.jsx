@@ -15,7 +15,7 @@ function Signup() {
        console.log(email);
        console.log(password);
        
-       axios.post('http://localhost:3001/register',{name, email, password})
+       axios.post('https://inourkitchen.onrender.com/register',{name, email, password})
        .then(res => {console.log(res)
         localStorage.setItem('user',email)
        navigate('/')

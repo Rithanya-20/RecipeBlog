@@ -17,7 +17,7 @@ function RecipeCards({value}) {
     <div>
 
         <div className='  '>
-        <img src={`http://localhost:3001/uploads/${value.imgpath}` } className='w-full h-[150px] lg:h-[270px]' alt='images'/>
+        <img src={`https://inourkitchen.onrender.com/uploads/${value.imgpath}` } className='w-full h-[150px] lg:h-[270px]' alt='images'/>
 
 <div className='p-4 '>
     <p className='font-medium text-sm lg:text-2xl'>{value.title}</p>
